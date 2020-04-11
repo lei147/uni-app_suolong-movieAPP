@@ -1,0 +1,221 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+}
+.header {
+  height: 70rpx;
+  padding: 0rpx 20rpx;
+  border-bottom: 0.5px solid #f5f5f5;
+  background-color: #ffffff;
+}
+.header view .iconfont {
+    color: #e54847;
+    font-size: 32rpx;
+}
+.header view .site {
+    font-size: 28rpx;
+    color: #999;
+}
+.header view .site .icon {
+      border-top: 10rpx solid #999;
+      border-left: 10rpx solid transparent;
+      border-right: 10rpx solid transparent;
+      border-bottom: 10rpx solid transparent;
+      position: relative;
+      top: 18rpx;
+      left: 6rpx;
+}
+.nav_title {
+  height: 70rpx;
+}
+.nav_title text {
+    height: 70rpx;
+    padding: 0 15rpx;
+    margin: 0 20rpx;
+    font: bold;
+    line-height: 70rpx;
+    box-sizing: border-box;
+}
+.nav_title .select {
+    color: #e54847;
+    border-bottom: 4rpx solid #e54847;
+}
+.main {
+  height: 100%;
+  background-color: #f8f8f8;
+}
+.main .main_1 {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+}
+.main .main_renying .empty {
+    height: 70vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+}
+.main .main_renying .empty view {
+      text-align: center;
+}
+.main .main_renying .empty view text {
+        font-size: 200rpx;
+        color: #e54847;
+}
+.main .main_renying .empty view .text {
+        margin: 20rpx 0;
+}
+.main .main_renying .empty view button {
+        color: #e54847;
+        border: 1px solid #e54847;
+}
+.main .main_daiying {
+    height: 75%;
+}
+.main .main_daiying .top_popular {
+      padding: 20rpx 20rpx;
+      margin-bottom: 20rpx;
+      background-color: #ffffff;
+}
+.main .main_daiying .top_popular .top_popular_title {
+        padding-bottom: 20rpx;
+        font-size: 24rpx;
+}
+.main .main_daiying .top_popular .scroll-view {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 20rpx;
+}
+.main .main_daiying .top_popular .scroll-view view {
+          width: 200rpx;
+          margin-right: 20rpx;
+}
+.main .main_daiying .top_popular .scroll-view view .movie_img {
+            width: 200rpx;
+            height: 290rpx;
+            overflow: hidden;
+            position: relative;
+}
+.main .main_daiying .top_popular .scroll-view view .movie_img .icon_xin {
+              width: 50rpx;
+              height: 50rpx;
+              text-align: center;
+              line-height: 50rpx;
+              background-color: rgba(0, 0, 0, 0.3);
+              position: absolute;
+              left: 0;
+              top: 0;
+              z-index: 999;
+}
+.main .main_daiying .top_popular .scroll-view view .movie_img .icon_xin .iconfont {
+                color: red;
+                font-size: 30rpx;
+}
+.main .main_daiying .top_popular .scroll-view view .movie_img image {
+              width: 100%;
+              height: 100%;
+}
+.main .main_daiying .top_popular .scroll-view view .movie_text {
+            color: #999;
+            font-size: 24rpx;
+}
+.main .main_daiying .top_popular .scroll-view view .movie_text view {
+              margin-top: 2rpx;
+}
+.main .main_daiying .top_popular .scroll-view view .movie_text .title {
+              width: 150rpx;
+              color: #000;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+}
+.main .main_daiying .movie_list {
+      padding: 0 20rpx;
+      background-color: #ffffff;
+      height: 70%;
+}
+.main .main_daiying .movie_list .movie {
+        padding-bottom: 20rpx;
+        border-bottom: 1rpx solid #f5f5f5;
+}
+.main .main_daiying .movie_list .movie view {
+          margin-bottom: 5rpx;
+}
+.main .main_daiying .movie_list .movie .movie_date {
+          padding: 20rpx 0;
+          font-size: 24rpx;
+          color: #555555;
+}
+.main .main_daiying .movie_list .movie .movie_img image {
+          width: 170rpx;
+          height: 220rpx;
+}
+.main .main_daiying .movie_list .movie .movie_text {
+          width: 51%;
+          color: #808080;
+          font-size: 24rpx;
+}
+.main .main_daiying .movie_list .movie .movie_text .title {
+            color: #000;
+            font-size: 32rpx;
+}
+.main .main_daiying .movie_list .movie .movie_btn view {
+          margin: 20rpx 0;
+          float: right;
+}
+.main .main_daiying .movie_list .movie .movie_btn .total {
+          color: #ff9900;
+}
+.main .main_daiying .movie_list .movie .movie_btn .btn {
+          position: relative;
+}
+.main .main_daiying .movie_list .movie .movie_btn .btn button {
+            height: 60rpx;
+            line-height: 60rpx;
+            font-size: 20rpx;
+            border: 1px solid #e54847;
+            color: #e54847;
+}
+.main .main_daiying .movie_list .movie .movie_btn .btn button .iconfont {
+              margin-right: 5rpx;
+}
+
